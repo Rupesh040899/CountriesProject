@@ -36,7 +36,7 @@ export default function Countries(){
                 const remoteData = await response.json();
                 setData(remoteData);
             } catch (error) {
-                console.log("Error fetching data: "+ error);
+                console.error("Error fetching data:"+ error);
             }
         }
         fetchData();
